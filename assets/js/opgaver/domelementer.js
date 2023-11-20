@@ -3,21 +3,25 @@
 
 
 /* Opgave 1.1
-Du skal finde elementet med id="redFigure" og console logge det.
-Du skal finde elementet med id="yellowFigure" og console logge det. 
+Du skal finde elementet med id="redFigure" og console logge det.*/
+/*Du skal finde elementet med id="yellowFigure" og console logge det. 
 */
 
 // din kode her
+let element1 = document.getElementById("redFigure");
+console.log(element1);
 
+let element2 = document.getElementById("yellowFigure");
+console.log(element2);
 
 /* opgave 1.2
 Du skal ændre baggrundsfarve på de to elementer du har fundet i opgave 1.1
 farven på elementerne skal være blå. brug evt. elelement.style.backgroundColor
 */
 
-
 // din kode her
-
+element1.style.backgroundColor ="blue"
+element2.style.backgroundColor ="blue"
 
 
 /* opgave 2.1
@@ -26,8 +30,9 @@ Du skal oprette følgende HTML elementer i Elementet med id opgaveTwo.
 - et p med teksten: Jeg har løst opgave 2.1
 */
 
-
 // din kode her
+let document1 = document.getElementById("opgaveTwo");
+document1.innerHTML = '<h2>Opgave 2.1 løsning</h2> <p>jeg har løst opgave 2.1, tror jeg</p>' ;
 
 
 // opgave 3 liveHTML lists
@@ -36,6 +41,8 @@ Du skal finde alle elementer med klassen purpleFigures og console logge resultat
 */
 
 // din kode her
+let element3 = document.getElementsByClassName("purpleFigures");
+console.log(element3);
 
 
 /* opgave 3.2
@@ -45,6 +52,9 @@ array.from beskrivelse HER: https://developer.mozilla.org/en-US/docs/Web/JavaScr
 */
 
 // din kode her
+let element4 = Array.from(document.getElementsByClassName('purpleFigures'));
+element4.style.backgroundColor="red"
+
 
 
 /* opgave 3.3
