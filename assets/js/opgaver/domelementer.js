@@ -81,6 +81,9 @@ const myData = {
 
 
 // din kode her
+const element5 = document.querySelector("#opgaveFour")
+document.createElement('div');
+
 
 
 
